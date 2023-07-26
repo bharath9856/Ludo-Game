@@ -1,21 +1,26 @@
 
 class Person{
+    
+    // properties
     constructor(name,phone){
         this.name = name;
         this.mobile_no = phone;
     }
-
+    // methods
     getPersonalDetails(){
         console.log("name:",this.name,"\n","Phone_no:",this.mobile_no)
     }
 }
 
 class Employee extends Person{
+    
+    //properties
     constructor(n,p,s,c){
-        super(n,p)  // This keyword is used to access properties on an object literal or class, or invoke a superclass's constructor.
+        super(n,p)  // This keyword is used to access properties(constructors) on an object literal or class, or invoke a superclass's constructor.
         this.salary = s;
         this.company = c;
     }
+    //Methods
     getEmployeeDetails(){
         console.log("Employee")
     }
